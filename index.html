@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="demo-files/demo.css"> -->
+        <link rel="stylesheet" href="stylecss.css">
+        
+
+    </head>
+
+
+
+    <body>
+
+        <!-- header -->
+        <div class="header">
+            <h1 id="test">To Do List</h1>
+        </div>
+        
+        <!-- body -->
+        <div class="body">
+            <div class="body-container">
+                <div class="colums">
+                    <!-- New task -->
+                    <div class="col-container">
+                        <form class="form">
+                            <div class="row-1 title"><p>New task or update</p></div>
+                            <div class="text-input"><input type="text" id="input" name="fname" ></div>
+                            <!-- warning message --><p class="warning hide " id="warning">*this field can't be empty</p>
+                            <div class="but">
+                                <button>
+                                    <span class="icon-plus"></span>
+                                </button>
+                            </div>    
+                            <!-- <input type="submit" value="plus">   -->
+                        </form>
+                    </div>
+                    <!--//////////////////////////////////////////////////  -->
+                    <!-- TO DO LIST  -->
+                    <div class="col-container">
+                        <!----- row 1 ------>
+                        <div class="row-1 title"><p>To Do List</p></div>
+                        <!----- row 2 ------>
+                        <div class="row-1 todo-list-container" id="dad">             <!--- box of All tasks--->
+                            <div class="atask-container">                             <!------ one task ------->
+                                <div class="icons-box-l"><span class="icon-checkbox-unchecked"></span></div>
+                                <div class="task-text">
+                                    <p class="txt-ovrflw-elpss">task 1</p>
+                                </div>
+                                <div class="icons-box-r">
+                                    <span class="icon-spinner11"></span>
+                                    <span class="icon-bin"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//////////////////////////////////////////////////  -->
+                    <!--  finished   -->
+                    <div class="col-container">
+                        <!----- row 1 ------>
+                        <div class="row-1 title"><p>Finished tasks</p></div>
+                        <!----- row 2 ------>
+                        <div class="row-1 todo-list-container" id="finished-list">             <!--- box of All tasks--->
+                            <div class="atask-container">                             <!------ one task ------->
+                                <div class="icons-box-l"><span class="icon-checkbox-checked"></span></div>
+                                <div class="task-text">
+                                    <p class="txt-ovrflw-elpss">task 2</p>
+                                </div>
+                                <div class="icons-box-r">
+                                    <span class="icon-spinner11"></span>
+                                    <span class="icon-bin"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--  finished   -->
+                    <!-- <div class="col-container">
+                        <div class="title"><p>Finished tasks</p></div>
+                        <div class="container" id="finished-list">
+                            <div class="task-box">
+                                <input type="checkbox" class="checkbox" checked>
+                                <div class="task-content">
+                                    <h2>task 2</h2>
+                                </div>
+                                <div class="icon-box">
+                                    <span class="icon-spinner11"></span>
+                                    <span class="icon-bin"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+
+
+            <!--//////////////////////////////////////////////////  -->
+            <!--//////////////////////////////////////////////////  -->
+            <!--//////////////////////////////////////////////////  -->
+
+
+        
+
+        <!--    input     -->
+
+        <!-- <form>
+            <div class="input">
+                
+                
+                    <p>New task or update</p>
+                    <input type="text" id="input" name="fname" >
+                </div>
+                <button class="inl-blk inp but" >
+                    <span class="icon-plus"></span>
+                    <input type="submit" value="Ok" id=""></div>
+                </button>
+            </div>
+        </form> -->
+        
+        
+        <!--    container    -->
+
+
+        
+        
+        
+    </body>
+    <script src="main.js"></script>
+</html>

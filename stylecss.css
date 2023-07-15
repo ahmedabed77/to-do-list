@@ -1,0 +1,172 @@
+/*///////////// to do list  */
+:root{
+    --gary :             #9b9a9a;
+    --white:             #ffffff;
+    --blue-marine:       #182347;
+    --yellow:            rgb(255, 187, 0);
+    --black :            #000000;
+    --font-1 :           "Helvetica", "Arial", sans-seri;
+
+}
+
+
+*{
+    font-family:         sans-serif;
+    margin:              0;
+    padding:             0;
+    box-sizing:          border-box;
+    align-items:         center;
+    text-align:          center;
+}
+body{
+    background:          var(--gary);
+    
+}
+
+/* ------------ header ------------- */
+.header{
+    width:               100%;
+    height:              80px;
+    background:          #0d1a2e;
+    display:             flex;
+    justify-content:     space-between;
+    align-items:         center;
+    padding:             0 20px;
+    font-family:         var(--font-1);
+    color:               var(--white);
+}
+/* -------------- body -------------*/
+.body{
+    width: 100%;
+    /* height: 80vh; */
+    background:          #F1F1F1;
+}
+.body-container{
+    max-width:           1300px;
+    margin:              auto;
+    padding-left:        23px;
+    padding-right:       25px;
+    height:              600px;
+}
+.colums{
+    padding-top:         30px;
+    box-sizing:          content-box;
+    display:             flex;
+    align-items:         center;
+    flex-wrap:           wrap;
+    justify-content:     space-around;
+    height:              85%;
+}
+.col-container{
+    padding-top:         30px;
+    width:               30%;
+    background-color:    #ffffff;
+    height:              100%;
+    display:             flex;
+    flex-direction:      column;
+    justify-content:     start;
+}
+   /* --------------  form  ------------  */
+.form{
+    width:               80%;
+    align-items:         center;
+}
+.row-1{
+    padding-top:         10px;
+}
+.title{
+    padding:             15px;
+    margin-bottom:       20px;
+}
+.col-container .title{
+    font-size:           x-large;
+    font-weight:         bold;
+}
+.but{
+    margin-top: 20px;
+}
+input[type=text]{
+    width:                100%;
+    padding:              12px 20px;
+    display:              inline-block;
+    border:               1px solid #ccc;
+    border-radius:        4px;
+    box-sizing:           border-box;
+}
+.warning{
+    margin-top:           5px;
+    color:                #ff0000;
+}
+button{
+    padding:              15px;
+    border-radius:        50%;
+    border-width:         0cap;
+}
+
+/* --------------  To Do List  ------------  */
+
+
+.todo-list-container{
+    width:                100%;
+    align-self:           center;
+    display:              flex;
+    flex-direction:       column;
+    justify-content:      start;
+}
+.atask-container{
+    background-color:     #EBEFF2 ;
+    width:                90%;
+    display:              flex;
+    flex-direction:       row;
+    flex-wrap:            nowrap;
+    justify-content:      space-between;
+    margin-bottom:        10px;
+    border-radius:        10px;
+    border:               #cccccc solid 1px;
+}
+#finished-list .atask-container{
+    background-color:     #EBEFF2;
+}
+.atask-container >*{
+    margin:               auto;
+}
+.icons-box-l{
+    margin-left:          15px;
+}
+.task-text{
+    max-width:            60%;
+    min-height:           40px;
+    display:              flex;
+    justify-content:      stretch;
+    margin:               auto;
+    font-family:          'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:            15px;
+    font-weight:          600;
+}
+.task-text p{   
+    width:                100%;    
+}
+.icons-box-r{
+    margin-right:         15px;
+}
+.icons-box-r span{
+    padding:              5px;
+    border-radius:        50%;
+    background-color:     #ffffff;
+}
+.icons-box-r .icon-bin{
+    color:                #f08080;
+}
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+.hide{
+    visibility: hidden;
+}
+.txt-ovrflw-elpss{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
