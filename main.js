@@ -52,7 +52,7 @@ dad.addEventListener("click",(eo)=>{
         if(val.value == ''){
             warn.classList.remove('hide');
         }else{
-        eo.target.parentElement.parentElement.getElementsByClassName("task-text")[0].getElementsByTagName("h2")[0].innerHTML=val.value;
+        eo.target.parentElement.parentElement.getElementsByClassName("task-text")[0].getElementsByTagName("p")[0].innerHTML=val.value;
         val.value = '';} 
      }     
 })
@@ -62,7 +62,7 @@ finished_list.addEventListener("click",(eo)=>{
         if(val.value == ''){
             warn.classList.remove('hide');
         }else{
-        eo.target.parentElement.parentElement.getElementsByClassName("task-text")[0].getElementsByTagName("h2")[0].innerHTML=val.value;
+        eo.target.parentElement.parentElement.getElementsByClassName("task-text")[0].getElementsByTagName("p")[0].innerHTML=val.value;
         val.value = '';} 
      } 
 })
